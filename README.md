@@ -44,4 +44,40 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** para la 
    ```bash
    git clone https://github.com/tu-usuario/gestion-carcel.git
    cd gestion-carcel
+   
+### **3. Crear la Base de Datos
 
+Usa **MySQL Workbench** o la línea de comandos de MySQL para crear la base de datos. Por ejemplo:
+
+```sql
+CREATE DATABASE gestion_carcel;
+```
+
+### Ejecutar el Script de la Base de Datos
+
+Importa el archivo `script_base_datos.sql` que se encuentra en la carpeta del proyecto (`/database/`). Puedes hacerlo con:
+
+1. **MySQL Workbench**: Usa la opción para importar scripts SQL.
+2. **Línea de comandos**: Ejecuta el siguiente comando (ajusta la ruta según tu sistema):
+
+```bash
+mysql -u tu_usuario -p gestion_carcel < /ruta/a/script_base_datos.sql
+```
+
+### Configurar el Archivo de Conexión a la Base de Datos
+
+1. Dentro del proyecto, localiza y edita el archivo `DatabaseConnection.java` (ubicado en `/src/com/proyecto/db/`).
+2. Actualiza las credenciales y parámetros de conexión según tu configuración local:
+
+```java
+public class DatabaseConnection {
+    private static final String URL = "jdbc:mysql://localhost:3306/gestion_carcel";
+    private static final String USER = "tu_usuario";
+    private static final String PASSWORD = "tu_contraseña";
+}
+```
+
+### Ejecutar el Proyecto
+
+1. Asegúrate de que tu servidor MySQL esté activo y que la base de datos esté configurada correctamente.
+2. En **NetBeans**, selecciona el proyecto y haz clic en **Run** para ejecutar la aplicación.
