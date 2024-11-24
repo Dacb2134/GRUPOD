@@ -55,14 +55,10 @@ CREATE DATABASE Proyecto;
 
 ### Ejecutar el Script de la Base de Datos
 
-Importa el archivo `ProyectoCarcel.sql` que se encuentra en la carpeta del proyecto (`/database/`). Puedes hacerlo con:
+Importa el archivo `ProyectoCarcel.sql` que se encuentra en la carpeta del proyecto (`/MYsql/`). Puedes hacerlo con:
 
 1. **MySQL Workbench**: Usa la opción para importar scripts SQL.
-2. **Línea de comandos**: Ejecuta el siguiente comando (ajusta la ruta según tu sistema):
 
-```bash
-mysql -u tu_usuario -p gestion_carcel < /ruta/a/ProyectoCarcel.sql
-```
 
 ### Configurar el Archivo de Conexión a la Base de Datos
 
