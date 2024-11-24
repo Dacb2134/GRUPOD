@@ -42,8 +42,8 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** para la 
 ### **2. Clonar o Descargar el Proyecto**
 1. **Clonar el Repositorio (si está en GitHub):**  
    ```bash
-   git clone https://github.com/tu-usuario/gestion-carcel.git
-   cd gestion-carcel
+   git clone https://github.com/Dacb2134/GRUPOD.git
+   cd GRUPOD
    
 ### **3. Crear la Base de Datos
 
